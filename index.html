@@ -27,14 +27,19 @@
                 const barre2 = document.getElementById("barre2").style;
                 const barre3 = document.getElementById("barre3").style;
                 const menu = document.getElementById('menu').style;
-				if(barre3.display == 'none'){
-					barre3.display = 'block';
+				if(barre2.opacity == '0'){
+					barre2.opacity = '1';
+                    barre1.transform = 'rotate(0deg)';
+                    barre3.transform = 'rotate(0deg)';
+                    barre1.marginTop = '0.5em';
+                    barre3.marginTop = '0.31em';
 				}
 				else{
-					barre3.display = 'none';
-                    barre1.transform = 'rotate(50deg)';
-                    barre2.transform = 'rotate(-50deg)';
-                    barre2.marginTop = '-5px';
+					barre2.opacity = '0';
+                    barre1.transform = 'rotate(47deg)';
+                    barre3.transform = 'rotate(-47deg)';
+                    barre1.marginTop = '0.5em';
+                    barre3.marginTop = '-1.31em';
 				}
 			}
         </script>

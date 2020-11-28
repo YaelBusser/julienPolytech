@@ -30,6 +30,10 @@ body{
 .flex{
     display: flex;
 }
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
 .caseHeader h1{
     font-family: font1;
     color: white;
@@ -38,14 +42,18 @@ body{
     margin-right: auto;
 }
 .menu-hamburger{
+    position: absolute ;
     margin-left: auto;
     margin-right: auto;
-    width: 10em;
-    height: 10em;
+    width: 3em;
+    height: 3em;
     border: 1px solid black;
+    cursor: pointer;
+
 }
 .space-barre{
     margin-top: 5px;
+    border-radius: 10em;
 }
 .barre1{
     width: 3em;
@@ -58,6 +66,7 @@ body{
     height: 0.5em;
     background-color: red;
     transition: all 0.5s ease-out;
+    opacity: 1;
 }
 .barre3{
     width: 3em;
