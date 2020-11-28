@@ -14,8 +14,30 @@
             </div>
         </div>
         <nav>
-
+            <div class="menu-hamburger" id="menu">
+                <div class="space-barre barre1" id="barre1"></div>
+                <div class="space-barre barre2" id="barre2"></div>
+                <div class="space-barre barre3" id="barre3"></div>
+            </div>
         </nav>
+        <script>
+			document.getElementById("menu").onclick = function() { menu() };
+            function menu(){
+                const barre1 = document.getElementById("barre1").style;
+                const barre2 = document.getElementById("barre2").style;
+                const barre3 = document.getElementById("barre3").style;
+                const menu = document.getElementById('menu').style;
+				if(barre3.display == 'none'){
+					barre3.display = 'block';
+				}
+				else{
+					barre3.display = 'none';
+                    barre1.transform = 'rotate(50deg)';
+                    barre2.transform = 'rotate(-50deg)';
+                    barre2.marginTop = '-5px';
+				}
+			}
+        </script>
     </header>
 </body>
 </html>
