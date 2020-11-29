@@ -32,6 +32,7 @@
                     <a href="#question9" id="question9Menu">Question 9</a>
                 </div>
             </nav>
+        </header>
             <div class="bloc-question flex-column">
                 <h2 id="question1">Question 1</h2>
                 <p>Tout comme l’exemple pour le nombre de mails en doublons, on utilise la commande NB.SI pour 
@@ -72,6 +73,9 @@
                 <p></p>
             </div>
         </div>
+        <footer>
+            <p> © 2020 by Julien Chevallier</p>
+        </footer>
         <script>
 			document.getElementById("menu").onclick = function() { menu() };
             function menu(){
@@ -118,6 +122,7 @@
             document.getElementById('question7Menu').onmouseout = function() { question7Out()};
             document.getElementById('question8Menu').onmouseout = function() { question8Out()};
             document.getElementById('question9Menu').onmouseout = function() { question9Out()};
+            
             function question1Over(){
                 document.getElementById('question1Menu').style.fontSize = '1.2em';
                 document.getElementById('question1Menu').style.backgroundColor = 'rgb(0,74,117)';
@@ -210,6 +215,5 @@
             }
          
         </script>
-    </header>
 </body>
 </html>
