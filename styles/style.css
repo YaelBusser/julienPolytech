@@ -197,3 +197,6 @@ footer p{
     margin-top: 1em;
     margin-left: 1em;
 }
+#question1{
+    transition: all 0.3s ease-out;
+}
