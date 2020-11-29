@@ -21,7 +21,7 @@
     font-style: normal;
 }
 body{
-    background-color: white;
+    background: url("../images/test.jpg")no-repeat;
     overflow-x: hidden;
     z-index: 0;
 }
